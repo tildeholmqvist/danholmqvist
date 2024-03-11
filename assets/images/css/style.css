@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset padding and margin for the body */
+body {
+    background-color: rgb(243, 239, 234);
+    font-family: "Playfair Display", serif;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Style for header element */
+header {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Style for logo image */
+.logo > img {
+    width: 400px;
+    height: auto;
+}
+
+
+
+/*ABOUT*/
+
+.title{
+    color: white;
+}
+

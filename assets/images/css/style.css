@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +19,12 @@ body {
 header {
     margin-left: 0;
     margin-right: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.navbar-nav {
+    margin-right: 100px;
+    font-size: 18px;
 }
 
 /* Style for logo image */
@@ -28,7 +33,68 @@ header {
     height: auto;
 }
 
+.dan-index-page {
+    padding: 60px;
+    background-color: rgb(252, 251, 250);
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.dan-photo {
+    height: 500px;
+    width: auto;
+}
 
+.index-about-card {
+    background-color: rgb(243, 239, 234);
+}
+
+.index-h5 {
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.7em;
+    padding: 15px;
+
+}
+
+.index-p {
+    text-align: left;
+    padding: 10px;
+}
+
+.artwork-card {
+    background-color: rgb(252, 251, 250);
+}
+
+.artwork-card:hover {
+    transform: translateY(-5px);
+}
+
+.artwork-image {
+    height: 300px;
+    object-fit: cover;
+}
+
+.artwork-card .card-title {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.artwork-card .card-text {
+    font-size: 1em;
+    font-family: "Quicksand", sans-serif;
+}
+
+a > .artwork-card {
+    color: #333; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.artwork-card a:hover {
+    color: #9c9fa1; 
+}
 
 /*ABOUT*/
 
@@ -36,3 +102,174 @@ header {
     color: white;
 }
 
+.h2-about {
+    font-size: 2em;
+    font-weight: 600;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.p-about {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 10px;
+}
+
+.p-last {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+.citat-about {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+.about-logo {
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.my-collections {
+    padding: 20px 0 10px 0;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.artwork-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.art-work-title {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: -40px;
+    font-weight: 600;
+}
+
+.index-page-btn {
+    border:rgba(0, 0, 0, 0.5) solid 1px;
+    font-style: italic;
+    float: left;
+    margin-left: 15px;
+}
+
+.white-line {
+    background-color: rgb(243, 239, 234);
+    padding: 40px 20px; 
+}
+
+.white-line h5 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.view-more a {
+    text-decoration: none;
+    color: #626161;
+    font-family: "Quicksand", sans-serif;
+    transition: color 0.3s ease;
+}
+
+.view-more a:hover {
+    color: #9c9fa1;
+}
+
+.artwork-index{
+    background-color: rgb(243, 239, 234);
+    padding: 15px;
+    text-align: center;
+}
+
+.artwork-image {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Gallery */
+
+.collection-gallery {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.collection-gallery ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.collection-gallery li {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.collection-gallery a {
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.collection-gallery a:hover {
+    border-bottom-color: #9c9fa1;
+}
+
+
+/* Footer */
+.footer {
+    background-color: rgb(243, 239, 234);
+    padding: 20px 0;
+}
+
+.represent {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.represent-galleries {
+    margin-bottom: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.gallery-link {
+    text-decoration: none;
+    color: #626161;
+    transition: color 0.3s ease;
+}
+
+.gallery-link:hover {
+    color: #9c9fa1;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.land {
+    font-style: italic;
+}

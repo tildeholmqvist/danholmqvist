@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-/* Reset padding and margin for the body */
 body {
     background-color: rgb(243, 239, 234);
     font-family: "Playfair Display", serif;
@@ -28,10 +27,12 @@ header {
 }
 
 /* Style for logo image */
-.logo > img {
+.logo a img {
     width: 400px;
     height: auto;
 }
+
+/* HOME PAGE */
 
 .dan-index-page {
     padding: 60px;
@@ -70,19 +71,14 @@ header {
     transform: translateY(-5px);
 }
 
-.artwork-image {
-    height: 300px;
-    object-fit: cover;
-}
-
 .artwork-card .card-title {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 10px;
     font-weight: 600;
 }
 
 .artwork-card .card-text {
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: "Quicksand", sans-serif;
 }
 
@@ -94,6 +90,10 @@ a > .artwork-card {
 
 .artwork-card a:hover {
     color: #9c9fa1; 
+}
+
+.card-body {
+    padding: 1px;
 }
 
 /*ABOUT*/
@@ -204,27 +204,30 @@ a > .artwork-card {
     height: 300px;
     object-fit: cover;
 }
-
 /* Gallery */
 
+/* Center align the collection gallery */
 .collection-gallery {
     text-align: center;
     padding: 20px 0;
 }
 
+/* Use shorthand for list-style */
 .collection-gallery ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Adjust margin-right for list items */
 .collection-gallery li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 15px; /* Reduce margin */
     font-weight: bold;
     font-size: 18px;
 }
 
+/* Style the anchor tags */
 .collection-gallery a {
     color: #333;
     text-decoration: none;
@@ -233,10 +236,55 @@ a > .artwork-card {
     transition: border-bottom-color 0.3s ease-in-out;
 }
 
+
 .collection-gallery a:hover {
     border-bottom-color: #9c9fa1;
 }
 
+.gallery-section {
+    padding: 20px 0;
+}
+
+.artwork-image {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+}
+
+.artwork-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #fff; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; 
+}
+
+/* Hover effect */
+.artwork-container:hover .artwork-image{
+    opacity: 0.7; /* Make the image slightly transparent on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.artwork-container:hover .artwork-info {
+    opacity: 1; /* Show info on hover */
+}
+
+.artwork-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.artwork-info {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    text-align: center;
+    color: #000;
+}
 
 /* Footer */
 .footer {

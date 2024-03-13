@@ -71,12 +71,6 @@ header {
     transform: translateY(-5px);
 }
 
-.artwork-card .card-title {
-    font-size: 1em;
-    margin-top: 10px;
-    font-weight: 600;
-}
-
 .artwork-card .card-text {
     font-size: 0.8em;
     font-family: "Quicksand", sans-serif;
@@ -149,12 +143,6 @@ a > .artwork-card {
 
 /* Gallery */
 
-.gallery-page {
-    background-color: rgb(252, 251, 250);
-    margin-right: 40px;
-    margin-left: 40px;
-    padding-bottom: 40px;
-}
 
 .white-line-gallery{
     background-color: rgb(252, 251, 250);
@@ -241,6 +229,77 @@ a > .artwork-card {
     text-align: center;
     color: #000;
 }
+
+/* Portfolio */
+
+.portfolio-artwork-img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-artwork {
+    padding: 20px;
+    height: 100%; 
+}
+
+/* CONTACT */
+
+/* Collaboration Form */
+.collaboration-form {
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.collaboration-form h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.collaboration-form label {
+    font-weight: 500;
+}
+
+.collaboration-form input[type="text"],
+.collaboration-form input[type="email"],
+.collaboration-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.collaboration-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.collaboration-form button[type="submit"] {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    border:rgba(0, 0, 0, 0.5) solid 1px;
+    border-radius: 5px;
+    background-color: rgb(243, 239, 234);
+    color: #000000;
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.collaboration-form button[type="submit"]:hover {
+    color: #9c9fa1;
+}
+
 
 /* Footer */
 .footer {

@@ -206,6 +206,19 @@ a > .artwork-card {
 }
 /* Gallery */
 
+.gallery-page {
+    background-color: rgb(252, 251, 250);
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-bottom: 40px;
+}
+
+.white-line-gallery{
+    background-color: rgb(252, 251, 250);
+    padding: 20px;
+    text-transform: uppercase;
+}
+
 /* Center align the collection gallery */
 .collection-gallery {
     text-align: center;

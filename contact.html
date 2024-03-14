@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid">
         <header class="header"> 
-            <nav class="navbar navbar-expand">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="navbar-brand logo">
                         <a href="index.html">
@@ -43,8 +43,47 @@
             </nav>
         </header>
     </div>    
-    <main>
         <main>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/IMG_8411.JPG" class="d-block mx-auto img-fluid" style="max-width: 800px;" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/IMG_8413.JPG" class="d-block mx-auto img-fluid" style="max-width: 800px;" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/IMG_8417.JPG" class="d-block mx-auto img-fluid" style="max-width: 800px;" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                <h2 class="h2-about">Transform Your Space:</h2>
+                <p class="citat-about">Custom Art, Effortlessly.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p class="p-about">Discover our Gallery, showcasing a variety of paintings available in different sizes, ranging from 40 to 110 cm. <br>If you're after something unique, our White Line collection offers custom-made pieces tailored to your needs.<br>
+                    Capturing your space is as easy as pulling out your phone. Snap a photo from a good angle, making sure to include a visible ruler for size reference.<br> Send the image and your painting request to dan@danholmqvist.se.<br>
+                    There's no cost or commitment involved, just pure excitement.<br> I'll send back a new image with your chosen painting seamlessly placed in your space.</p>
+
+            </div>
             <section class="container collaboration-form">
                 <h2 class="mt-5">Inquiry Form</h2>
                 <form>
@@ -64,11 +103,8 @@
                 </form>
             </section>
         </main>
-        
-    </main>
-
     <footer class="text-center mt-5">
-        <p>&copy; 2024 Fotograf Dan Holmqvist</p>
+        <p>&copy; 2024 Dan Holmqvist Art</p>
     </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

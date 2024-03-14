@@ -245,6 +245,12 @@ a > .artwork-card {
 /* CONTACT */
 
 /* Collaboration Form */
+
+
+#carouselExampleIndicators {
+    justify-content: center;
+    display: flex;
+}
 .collaboration-form {
     margin-top: 60px;
     background-color: #fff;
@@ -335,4 +341,92 @@ a > .artwork-card {
 
 .land {
     font-style: italic;
+}
+
+/* Add media queries to adjust styles for tablets and phones */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .logo a img {
+        width: 300px; 
+    }
+    .h2-about {
+        font-size: 1.5em;
+    }
+    .p-about {
+        font-size: 1em; 
+        padding: 10px; 
+    }
+    .about-logo {
+        width: 150px; 
+    }
+
+    .collaboration-form h2 {
+        font-size: 1.5em;
+    }
+    .collaboration-form input[type="text"],
+    .collaboration-form input[type="email"],
+    .collaboration-form textarea {
+        font-size: 14px;
+    }
+    .collaboration-form button[type="submit"] {
+        font-size: 16px;
+    }
+   
+   
+}
+
+/* For phones */
+@media (max-width: 576px) {
+    .logo a img {
+        width: 200px; 
+    }
+    .navbar-nav {
+        margin-right: 0; 
+        font-size: 16px; 
+    }
+    .dan-index-page {
+        padding: 30px; 
+    }
+    .dan-photo {
+        height: auto; 
+        max-width: 100%; 
+    }
+    .index-about-card {
+        width: 100%;
+        margin-top: 30px; 
+        margin-bottom: 30px;
+    }
+    .index-h5 {
+        font-size: 1.5em; 
+    }
+    .index-p {
+        font-size: 1em; 
+    }
+    .carousel-indicators {
+        bottom: 10px; 
+    }
+    .artwork-image {
+        height: 300px; 
+    }
+
+    .collaboration-form {
+        padding: 15px; /* Adjust padding */
+    }
+    .collaboration-form h2 {
+        font-size: 1.2em; /* Adjust font size */
+    }
+    .collaboration-form input[type="text"],
+    .collaboration-form input[type="email"],
+    .collaboration-form textarea {
+        font-size: 12px; /* Adjust font size */
+    }
+    .collaboration-form button[type="submit"] {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    #carouselExampleIndicators img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
 }

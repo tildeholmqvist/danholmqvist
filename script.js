@@ -10,4 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
         interval: 5000,
         wrap: true 
     });
+
+    var thirdCarousel = document.querySelector('#carouselExampleIndicators');
+    var thirdCarouselInstance = new bootstrap.Carousel(thirdCarousel, {
+        interval: 5000,
+        wrap: true 
+    });
 });

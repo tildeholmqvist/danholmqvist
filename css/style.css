@@ -345,6 +345,38 @@ a > .artwork-card {
 
 /* Add media queries to adjust styles for tablets and phones */
 
+@media (max-width: 999px) {
+    .row.dan-index-page {
+        flex-direction: column;
+    }
+    .col-md-6.col-sm-12.order-md-1.d-flex.justify-content-center.align-items-center,
+    .col-md-6.col-sm-12.order-md-2.d-flex.justify-content-center {
+        order: 2;
+        width: 100%;
+    }
+    .col-md-6.col-sm-12.order-md-2.d-flex.justify-content-center.align-items-center,
+    .col-md-6.col-sm-12.order-md-1.d-flex.justify-content-center {
+        order: 1;
+    }
+    .col-md-6.col-sm-12.order-md-1.d-flex.justify-content-center.align-items-center img,
+    .col-md-6.col-sm-12.order-md-2.d-flex.justify-content-center img {
+        width: 100%; 
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom: 20px;
+    }
+    
+    .col-md-6.col-sm-12.order-md-1.d-flex.justify-content-center.align-items-center,
+    .col-md-6.col-sm-12.order-md-2.d-flex.justify-content-center {
+        width: 100%; 
+    }
+
+    .card.index-about-card {
+        width: 90%; 
+        margin: auto; 
+    }
+}
+
 /* For tablets */
 @media (max-width: 768px) {
     .logo a img {
@@ -372,7 +404,13 @@ a > .artwork-card {
     .collaboration-form button[type="submit"] {
         font-size: 16px;
     }
-   
+
+    .index-about-card {
+        width: 100%;
+        margin-top: 30px; 
+        margin-bottom: 30px;
+       
+    }
    
 }
 
@@ -390,7 +428,7 @@ a > .artwork-card {
     }
     .dan-photo {
         height: auto; 
-        max-width: 100%; 
+        max-width: auto; 
     }
     .index-about-card {
         width: 100%;
@@ -411,18 +449,18 @@ a > .artwork-card {
     }
 
     .collaboration-form {
-        padding: 15px; /* Adjust padding */
+        padding: 15px; 
     }
     .collaboration-form h2 {
-        font-size: 1.2em; /* Adjust font size */
+        font-size: 1.2em; 
     }
     .collaboration-form input[type="text"],
     .collaboration-form input[type="email"],
     .collaboration-form textarea {
-        font-size: 12px; /* Adjust font size */
+        font-size: 12px; 
     }
     .collaboration-form button[type="submit"] {
-        font-size: 14px; /* Adjust font size */
+        font-size: 14px; 
     }
 
     #carouselExampleIndicators img {

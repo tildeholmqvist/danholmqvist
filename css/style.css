@@ -141,6 +141,9 @@ a > .artwork-card {
     padding: 25px;
 }
 
+.about-pictures {
+    margin-top: 2px;
+}
 /* Gallery */
 
 
@@ -222,13 +225,50 @@ a > .artwork-card {
     position: relative;
     overflow: hidden;
 }
-
-.artwork-info {
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 10px;
-    text-align: center;
-    color: #000;
+/* Popup box */
+.enlarged-image-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* Popup image */
+.popup-image {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    max-height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #aaaaaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /* Portfolio */
 

@@ -6,11 +6,12 @@ function openPopup(imageSrc) {
 }
 
 function closePopup() {
-    document.getElementById('enlargedImagePopup').style.display = 'none';
+    const modal = document.getElementById('enlargedImagePopup');
+    modal.style.display = 'none';
     document.body.style.overflow = 'auto'; // Enable scrolling on the body
     var backdrop = document.getElementsByClassName('modal-backdrop');
-        for (var i = 0; i < backdrop.length; i++) {
-            backdrop[i].parentNode.removeChild(backdrop[i]);
+    for (var i = 0; i < backdrop.length; i++) {
+        backdrop[i].parentNode.removeChild(backdrop[i]);
     }
 }
 

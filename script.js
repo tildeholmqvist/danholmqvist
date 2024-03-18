@@ -1,18 +1,14 @@
 function openPopup(imageSrc) {
-    const popupImage = document.querySelector('.popup-image');
+    const modal = document.getElementById('enlargedImagePopup');
+    const popupImage = modal.querySelector('.popup-image');
     popupImage.src = imageSrc;
-    const enlargedImagePopup = new bootstrap.Modal(document.getElementById('enlargedImagePopup'));
-    enlargedImagePopup.show();
+    modal.style.display = 'block';
 }
 
+// Function to close the popup modal
 function closePopup() {
     const modal = document.getElementById('enlargedImagePopup');
     modal.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Enable scrolling on the body
-    var backdrop = document.getElementsByClassName('modal-backdrop');
-    for (var i = 0; i < backdrop.length; i++) {
-        backdrop[i].parentNode.removeChild(backdrop[i]);
-    }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -33,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
         wrap: true
     });
 
-    // Attach click event to artwork containers
     const artworkContainers = document.querySelectorAll('.artwork-container');
     artworkContainers.forEach(container => {
         container.addEventListener('click', () => {
@@ -42,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Attach close event to the close button inside the modal
     const closeButton = document.querySelector('#enlargedImagePopup .close');
     closeButton.addEventListener('click', closePopup);
 });

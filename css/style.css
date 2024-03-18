@@ -146,6 +146,10 @@ a > .artwork-card {
 }
 /* Gallery */
 
+.sold {
+    color:#d15c5c;
+    font-weight: 600;
+}
 
 .white-line-gallery{
     background-color: rgb(252, 251, 250);

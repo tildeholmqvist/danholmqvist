@@ -248,7 +248,7 @@ a > .artwork-card {
     margin: auto;
     width: 100%;
     max-width: 800px;
-    max-height: auto;
+    max-height: none;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -478,7 +478,7 @@ a > .artwork-card {
     }
     .dan-photo {
         height: auto; 
-        max-width: auto; 
+        max-width: none; 
     }
     .index-about-card {
         width: 100%;

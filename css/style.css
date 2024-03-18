@@ -209,7 +209,7 @@ a > .artwork-card {
     width: 100%;
     padding: 10px;
     text-align: center;
-    color: #fff; 
+    color: #626161;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none; 
@@ -388,7 +388,6 @@ a > .artwork-card {
 }
 
 /* Add media queries to adjust styles for tablets and phones */
-
 @media (max-width: 999px) {
     .row.dan-index-page {
         flex-direction: column;
@@ -418,6 +417,13 @@ a > .artwork-card {
     .card.index-about-card {
         width: 90%; 
         margin: auto; 
+    }
+
+    .artwork-info {
+        position: relative;
+        opacity: 1; /* Make it always visible */
+        pointer-events: auto; 
+        color:#626161;
     }
 }
 

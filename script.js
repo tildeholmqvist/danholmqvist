@@ -14,33 +14,34 @@ function closePopup() {
     }
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
 
-    var firstCarousel = document.querySelector('#carouselExampleFeatured');
-    var firstCarouselInstance = new bootstrap.Carousel(firstCarousel, {
-        interval: 5000,
+    // Initialize carousels
+    const firstCarousel = new bootstrap.Carousel(document.querySelector('#carouselExampleFeatured'), {
+        interval: 5000, // Adjust interval as needed
         wrap: true
     });
 
-    var secondCarousel = document.querySelector('#carouselExampleControls');
-    var secondCarouselInstance = new bootstrap.Carousel(secondCarousel, {
-        interval: 5000,
+    const secondCarousel = new bootstrap.Carousel(document.querySelector('#carouselExampleControls'), {
+        interval: 5000, // Adjust interval as needed
         wrap: true
     });
 
-    var thirdCarousel = document.querySelector('#carouselExampleIndicators');
-    var thirdCarouselInstance = new bootstrap.Carousel(thirdCarousel, {
-        interval: 5000,
+    const thirdCarousel = new bootstrap.Carousel(document.querySelector('#carouselExampleIndicators'), {
+        interval: 5000, // Adjust interval as needed
         wrap: true
     });
 
-const artworkContainers = document.querySelectorAll('.artwork-container');
-
-artworkContainers.forEach(container => {
-    container.addEventListener('click', () => {
-        const artworkImage = container.querySelector('.card-img-top').src;
-        openPopup(artworkImage);
+    // Attach click event to artwork containers
+    const artworkContainers = document.querySelectorAll('.artwork-container');
+    artworkContainers.forEach(container => {
+        container.addEventListener('click', () => {
+            const artworkImage = container.querySelector('.card-img-top').src;
+            openPopup(artworkImage);
+        });
     });
-});
+
+    // Attach close event to the close button inside the modal
+    const closeButton = document.querySelector('#enlargedImagePopup .close');
+    closeButton.addEventListener('click', closePopup);
 });

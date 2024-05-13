@@ -246,9 +246,10 @@ a > .artwork-card {
 .popup-image {
     display: block;
     margin: auto;
-    width: auto;
-    max-width: 800px;
-    max-height: 800px;
+    width: auto; 
+    height: 90%;
+    max-width: none; 
+    max-height: none; 
     position: relative;
     top: 50%;
     transform: translateY(-50%);

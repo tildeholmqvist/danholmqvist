@@ -1,6 +1,6 @@
 function openPopup(imageSrc) {
     const modal = document.getElementById('enlargedImagePopup');
-    const popupImage = modal.querySelector('.popup-image');
+    const popupImage = document.querySelector('#enlargedImagePopup .popup-image');
     popupImage.src = imageSrc;
     modal.style.display = 'block';
 }

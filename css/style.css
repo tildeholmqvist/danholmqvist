@@ -275,16 +275,17 @@ a > .artwork-card {
 }
 
 
-/* Portfolio */
+/* Showroom */
 
-.portfolio-artwork-img {
-    width: 100%;
-    height: auto;
+.showroom-page {
+    padding: 30px;
+    background-color: rgb(252, 251, 250);
+    margin-top: 60px;
 }
 
-.portfolio-artwork {
-    padding: 20px;
-    height: 100%; 
+.showroom-page img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* CONTACT */
@@ -425,6 +426,10 @@ a > .artwork-card {
         opacity: 1; /* Make it always visible */
         pointer-events: auto; 
         color:#626161;
+    }
+
+    .showroom-text {
+        display: none;
     }
 }
 
